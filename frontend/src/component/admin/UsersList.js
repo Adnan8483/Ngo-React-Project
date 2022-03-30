@@ -33,13 +33,13 @@ export default function UsersList() {
   }
 
   return (
-    <div className="container my-2">
-      <h3 align="center" className="my-3">Users List</h3>
+    <div className="container my-2" >
+      <h3 align="center" className="my-3" >Users List</h3>
      {/* {loading && (<Loading/>)} */}
      {/* {error && alert("Error occured to get data")} */}
      {!paginatedPosts ? ("ERROR: Data Not Found. Please check your internet connection!"):(
-        <Table className="table table-hover table-light  table-bordered shadow">
-          <thead className="thead-dark">
+        <Table className="table table-hover table-light  table-bordered shadow " >
+          <thead className="thead-dark" >
             <tr>        
               <th scope="col">FirstName</th>
               <th scope="col">LastName</th>
@@ -49,7 +49,7 @@ export default function UsersList() {
               <th scope="col">Coordinator</th>                     
             </tr>
           </thead>
-          <tbody>
+          <tbody >
               {paginatedPosts.map((user, id) => (
                   <tr key={id}>
                       
